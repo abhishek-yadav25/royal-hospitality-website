@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Royal Hospitality — Home</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Your CSS -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- NAVBAR (Put at top of every page) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Royal Hospitality</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item mx-2"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="menu.html">Menu</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="halls.html">Halls</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="rooms.html">Rooms</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="my-booking.html">Bookings</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- BOOKING SECTION -->
+<section id="booking" class="book-event-section">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4 text-white">Book Your Event</h2>
+    <p class="text-center mb-5 text-white">
+      Birthdays, anniversaries, corporate meetups — we handle it all.
+    </p>
+    <form class="row g-3" id="bookingForm">
+      <div class="col-md-6">
+        <input type="text" class="form-control" placeholder="Your Full Name" required>
+      </div>
+
+      <div class="col-md-6">
+        <input type="tel" class="form-control" placeholder="Phone Number" required>
+      </div>
+
+      <div class="col-md-6">
+        <input type="email" class="form-control" placeholder="Email Address" required>
+      </div>
+
+      <div class="col-md-6">
+        <input type="date" class="form-control" required>
+      </div>
+
+      <div class="col-md-6">
+        <input type="number" class="form-control" placeholder="Number of Guests" min="1" required>
+      </div>
+
+      <div class="col-md-6">
+        <select class="form-control" required>
+          <option value="" disabled selected>Select Event Type</option>
+          <option>Birthday</option>
+          <option>Anniversary</option>
+          <option>Corporate Event</option>
+          <option>Small Party</option>
+        </select>
+      </div>
+
+      <div class="col-12">
+        <textarea class="form-control" rows="4" placeholder="Special Requirements"></textarea>
+      </div>
+
+      <div class="col-12 text-center">
+        <button type="submit" class="btn btn-dark btn-lg px-4">Submit Request</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<footer class="bg-dark text-white py-3 mt-5">
+  <div class="container text-center">
+    © 2025 Royal Hospitality. All Rights Reserved.
+  </div>
+</footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="royal.js"></script>
+</body>
+</html>

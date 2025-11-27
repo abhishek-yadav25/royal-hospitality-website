@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu — Royal Hospitality</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">Royal Hospitality</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item mx-2"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="halls.html">Halls</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="rooms.html">Rooms</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="my-booking.html">Bookings</a></li>
+          <li class="nav-item mx-2"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+<!-- CART FLOATING BOX -->
+<div class="cart-box bg-dark text-white p-3 position-fixed top-0 end-0 m-3 rounded" style="z-index:1000;">
+  <span id="cart-count">0</span> items — ₹<span id="cart-total">0</span>
+</div>
+
+<!-- VEG MENU -->
+<section class="container my-5">
+  <h2 class="text-center fw-bold mb-4">Veg Menu</h2>
+  <div class="row g-4">
+
+    <div class="col-md-3">
+      <div class="card menu-card">
+        <img src="images/paneer-tikka-masala.jpg" class="card-img-top" alt="Paneer Tikka">
+        <div class="card-body text-center">
+          <h5 class="card-title">Paneer Tikka</h5>
+          <p class="card-text">₹220</p>
+          <button class="btn btn-primary add-to-cart" data-name="Paneer Tikka" data-price="220">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card menu-card">
+        <img src="images/veg briyani.jpeg" class="card-img-top" alt="Veg Biryani">
+        <div class="card-body text-center">
+          <h5 class="card-title">Veg Biryani</h5>
+          <p class="card-text">₹180</p>
+          <button class="btn btn-primary add-to-cart" data-name="Veg Biryani" data-price="180">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card menu-card">
+        <img src="images/pav-bhaji.jpeg" class="card-img-top" alt="Pav Bhaji">
+        <div class="card-body text-center">
+          <h5 class="card-title">Pav Bhaji</h5>
+          <p class="card-text">₹150</p>
+          <button class="btn btn-primary add-to-cart" data-name="Pav Bhaji" data-price="150">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card menu-card">
+        <img src="images/veg-pizza.jpg" class="card-img-top" alt="Veg Cheese Pizza">
+        <div class="card-body text-center">
+          <h5 class="card-title">Veg Cheese Pizza</h5>
+          <p class="card-text">₹300</p>
+          <button class="btn btn-primary add-to-cart" data-name="Veg Cheese Pizza" data-price="300">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- NON-VEG MENU -->
+<section class="container my-5">
+  <h2 class="text-center fw-bold mb-4">Non-Veg Menu</h2>
+  <div class="row g-4">
+
+    <div class="col-md-3">
+      <div class="card menu-card">
+        <img src="images/chicken biryani.jpg" class="card-img-top" alt="Chicken Biryani">
+        <div class="card-body text-center">
+          <h5 class="card-title">Chicken Biryani</h5>
+          <p class="card-text">₹250</p>
+          <button class="btn btn-primary add-to-cart" data-name="Chicken Biryani" data-price="250">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card menu-card">
+        <img src="images/chk burger.jpeg" class="card-img-top" alt="Chicken Burger">
+        <div class="card-body text-center">
+          <h5 class="card-title">Chicken Burger</h5>
+          <p class="card-text">₹180</p>
+          <button class="btn btn-primary add-to-cart" data-name="Chicken Burger" data-price="180">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card menu-card">
+        <img src="images/chk pizza.jpg" class="card-img-top" alt="Chicken Pizza">
+        <div class="card-body text-center">
+          <h5 class="card-title">Chicken Pizza</h5>
+          <p class="card-text">₹350</p>
+          <button class="btn btn-primary add-to-cart" data-name="Chicken Pizza" data-price="350">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card menu-card">
+        <img src="images/fish-fry.jpeg" class="card-img-top" alt="Fish Fry">
+        <div class="card-body text-center">
+          <h5 class="card-title">Fish Fry</h5>
+          <p class="card-text">₹200</p>
+          <button class="btn btn-primary add-to-cart" data-name="Fish Fry" data-price="200">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="container my-5 text-center">
+  <h2 class="fw-bold mb-3">Contact Us</h2>
+  <p>Phone: 9999999999 | Email: info@royal.com</p>
+</section>
+
+<!-- CART SECTION -->
+<section class="container my-5">
+  <h3 class="fw-bold">Your Cart</h3>
+  <ul id="cart-items" class="list-group mb-3"></ul>
+</section>
+
+<footer class="bg-dark text-white py-3 mt-5">
+  <div class="container text-center">
+    © 2025 Royal Hospitality. All Rights Reserved.
+  </div>
+</footer>
+
+ <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="royal.js"></script>
+</body>
+</html>
