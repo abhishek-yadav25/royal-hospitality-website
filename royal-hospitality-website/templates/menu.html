@@ -1,0 +1,178 @@
+{% extends 'master.html' %}
+{% load static %}
+
+{% block title %}Menu - Royal Hospitality{% endblock %}
+
+{% block content %}
+
+
+<!-- CART FLOATING BOX -->
+<div class="cart-box bg-dark text-white p-3 position-fixed top-0 end-0 m-3 rounded" style="z-index:1000;">
+  <span id="cart-count">0</span> items — ₹<span id="cart-total">0</span>
+</div>
+
+<!-- VEG MENU -->
+<section class="container my-5">
+  <h2 class="text-center fw-bold mb-4">Veg Menu</h2>
+  <div class="row g-4">
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card menu-card h-100">
+        <img src="{% static 'images/paneer-tikka-masala.jpg' %}" class="card-img-top" alt="Paneer Tikka">
+        <div class="card-body text-center">
+          <h5 class="card-title">Paneer Tikka</h5>
+          <p class="card-text">₹220</p>
+          <button class="btn btn-primary add-to-cart" data-name="Paneer Tikka" data-price="220">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card menu-card h-100">
+        <img src="{% static 'images/veg briyani.jpeg' %}" class="card-img-top" alt="Veg Biryani">
+        <div class="card-body text-center">
+          <h5 class="card-title">Veg Biryani</h5>
+          <p class="card-text">₹180</p>
+          <button class="btn btn-primary add-to-cart" data-name="Veg Biryani" data-price="180">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card menu-card h-100">
+        <img src="{% static 'images/pav-bhaji.jpeg' %}" class="card-img-top" alt="Pav Bhaji">
+        <div class="card-body text-center">
+          <h5 class="card-title">Pav Bhaji</h5>
+          <p class="card-text">₹150</p>
+          <button class="btn btn-primary add-to-cart" data-name="Pav Bhaji" data-price="150">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+      <div class="card menu-card h-100">
+        <img src="{% static 'images/veg-pizza.jpg' %}" class="card-img-top" alt="Veg Cheese Pizza">
+        <div class="card-body text-center">
+          <h5 class="card-title">Veg Cheese Pizza</h5>
+          <p class="card-text">₹300</p>
+          <button class="btn btn-primary add-to-cart" data-name="Veg Cheese Pizza" data-price="300">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- NON-VEG MENU -->
+<section class="container mt-0 my-5">
+  <h2 class="text-center fw-bold mb-4">Non-Veg Menu</h2>
+  <div class="row g-4">
+
+    <div class="col-md-3">
+      <div class="card menu-card">
+        <img src="{% static 'images/chicken biryani.jpg' %}" class="card-img-top" alt="Chicken Biryani">
+        <div class="card-body text-center">
+          <h5 class="card-title">Chicken Biryani</h5>
+          <p class="card-text">₹250</p>
+          <button class="btn btn-primary add-to-cart" data-name="Chicken Biryani" data-price="250">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card menu-card">
+        <img src="{% static 'images/chk burger.jpeg' %}" class="card-img-top" alt="Chicken Burger">
+        <div class="card-body text-center">
+          <h5 class="card-title">Chicken Burger</h5>
+          <p class="card-text">₹180</p>
+          <button class="btn btn-primary add-to-cart" data-name="Chicken Burger" data-price="180">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card menu-card">
+        <img src="{% static 'images/chk pizza.jpg' %}" class="card-img-top" alt="Chicken Pizza">
+        <div class="card-body text-center">
+          <h5 class="card-title">Chicken Pizza</h5>
+          <p class="card-text">₹350</p>
+          <button class="btn btn-primary add-to-cart" data-name="Chicken Pizza" data-price="350">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3">
+      <div class="card menu-card">
+        <img src="{% static 'images/fish-fry.jpeg' %}" class="card-img-top" alt="Fish Fry">
+        <div class="card-body text-center">
+          <h5 class="card-title">Fish Fry</h5>
+          <p class="card-text">₹200</p>
+          <button class="btn btn-primary add-to-cart" data-name="Fish Fry" data-price="200">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+</section>
+<!-- SPECIAL OFFERS -->
+  <h3 class="fw-bold mb-4 text-center">Special Offers</h3>
+  <div class="row g-4 justify-content-center">
+
+    <div class="col-12 col-md-4">
+      <div class="card special-offer p-3 h-100">
+        <img src="{% static 'images/buffet.webp' %}" class="card-img-top rounded mb-3" alt="Weekend Buffet">
+        <h5 class="card-title">Weekend Buffet</h5>
+        <p class="card-text">Enjoy our premium buffet at just ₹499 per person.</p>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card special-offer p-3 h-100">
+        <img src="{% static 'images/couple dinner.jpg' %}" class="card-img-top rounded mb-3" alt="Couple's Dinner">
+        <h5 class="card-title">Couple's Dinner</h5>
+        <p class="card-text">Romantic dinner for two with complimentary drinks.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <h3 class="fw-bold my-5 text-center">What Our Guests Say</h3>
+  <div class="row g-4 justify-content-center">
+
+    <div class="col-12 col-md-4">
+      <div class="card testimonial p-3 h-100">
+        <p>"Amazing hospitality and luxurious rooms. Highly recommended!"</p>
+        <h6 class="fw-bold mt-2">– Rajesh Kumar</h6>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card testimonial p-3 h-100">
+        <p>"The food is top-notch, and the ambience is perfect for family dinners."</p>
+        <h6 class="fw-bold mt-2">– Priya Sharma</h6>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- NEWSLETTER -->
+  <h3 class="fw-bold my-5 text-center">Stay Updated</h3>
+  <p class="text-center">Subscribe to our newsletter for exclusive offers and updates</p>
+  <div class="d-flex justify-content-center mt-3 flex-wrap">
+    <input type="email" class="form-control w-50 me-2 mb-2" placeholder="Enter your email">
+    <button class="btn btn-gold mb-2">Subscribe</button>
+  </div>
+</section>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="{% static 'js/royal.js' %}"></script>
+
+{% endblock %}

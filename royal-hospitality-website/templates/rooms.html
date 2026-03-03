@@ -1,0 +1,65 @@
+{% extends 'master.html' %}
+{% load static %}
+
+{% block title %}Rooms - Royal Hospitality{% endblock %}
+
+{% block content %}
+
+<!-- ================= HEADER SECTION START ================= -->
+<header class="text-center py-5 bg-dark text-white">
+  <h1 class="fw-bold">Our Rooms</h1>
+  <p class="lead opacity-75">Comfortable spaces for work, study & events</p>
+</header>
+<!-- ================= HEADER SECTION END ================= -->
+
+
+<!-- ================= ROOMS GRID SECTION START ================= -->
+<div class="container py-5">
+
+  <div class="row g-4">
+
+    <!-- Private Study Room -->
+    <div class="col-md-4">
+      <div class="card shadow-sm border-0 h-100">
+        <img src="{% static 'images/study room.jpg' %}" class="card-img-top room-img" alt="Study Room">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Private Study Room</h5>
+          <p class="card-text small text-muted">Perfect for focus work. Max 2 people.</p>
+          <p class="fw-bold mb-2">₹300 / hour</p>
+          <a href="#" class="btn btn-dark w-100">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Team Meeting Room -->
+    <div class="col-md-4">
+      <div class="card shadow-sm border-0 h-100">
+        <img src="{% static 'images/meeting room.jpg' %}" class="card-img-top room-img" alt="Meeting Room">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Team Meeting Room</h5>
+          <p class="card-text small text-muted">Whiteboard + Wi-Fi. Max 6 people.</p>
+          <p class="fw-bold mb-2">₹500 / hour</p>
+          <a href="#" class="btn btn-dark w-100">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event Space -->
+    <div class="col-md-4">
+      <div class="card shadow-sm border-0 h-100">
+        <img src="{% static 'images/space.jpg' %}" class="card-img-top room-img" alt="Event Space">
+        <div class="card-body">
+          <h5 class="card-title fw-bold">Event Space</h5>
+          <p class="card-text small text-muted">Birthdays, workshops, small events.</p>
+          <p class="fw-bold mb-2">₹1500 / event</p>
+          <a href="#" class="btn btn-dark w-100">Book Now</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<!-- ================= ROOMS GRID SECTION END ================= -->
+
+{% endblock %}

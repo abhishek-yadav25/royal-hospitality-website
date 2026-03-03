@@ -1,0 +1,97 @@
+{% extends 'master.html' %}
+{% load static %}
+
+{% block title %}Halls - Royal Hospitality{% endblock %}
+
+{% block content %}
+
+<!-- ================= HERO HALL SECTION START ================= -->
+<section class="hero-hall d-flex align-items-center justify-content-center">
+  <div class="text-center text-white">
+    <h1 class="fw-bold display-4">Celebrate with Us</h1>
+    <p class="lead mt-2">
+      Perfect space for birthdays, anniversaries & private events
+    </p>
+  </div>
+</section>
+<!-- ================= HERO HALL SECTION END ================= -->
+
+
+<!-- ================= WHY CHOOSE HALL SECTION START ================= -->
+<div class="container my-5"> <!-- CONTAINER START -->
+
+  <h2 class="fw-bold text-center mb-4">Why Choose Our Hall?</h2>
+
+  <div class="row text-center g-4">
+
+    <div class="col-md-4">
+      <div class="p-4 border rounded-4">
+        <h5 class="fw-bold mb-2">Up to 60 Guests</h5>
+        <p>Spacious seating and comfortable ambience for any occasion.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="p-4 border rounded-4">
+        <h5 class="fw-bold mb-2">Custom Decoration</h5>
+        <p>Balloon decor, theme setup, and lighting arrangement available.</p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="p-4 border rounded-4">
+        <h5 class="fw-bold mb-2">Catering Included</h5>
+        <p>Snacks, dinner & dessert packages made fresh by our chefs.</p>
+      </div>
+    </div>
+
+  </div>
+
+</div> <!-- CONTAINER END -->
+<!-- ================= WHY CHOOSE HALL SECTION END ================= -->
+
+
+<!-- ================= HALL GALLERY SECTION START ================= -->
+<section class="hall-gallery py-5">
+
+  <div class="container"> <!-- GALLERY CONTAINER START -->
+
+    <h2 class="fw-bold text-center mb-5">Our Hall in Action</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'images/bdy setup.jpg' %}" class="card-img-top" alt="Birthday Setup">
+          <div class="card-body text-center">
+            <h5 class="card-title">Birthday Setup</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'images/cooperate event.jpg' %}" class="card-img-top" alt="Corporate Event">
+          <div class="card-body text-center">
+            <h5 class="card-title">Corporate Event</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{% static 'images/anniver-cele.jpg' %}" class="card-img-top" alt="Anniversary Celebration">
+          <div class="card-body text-center">
+            <h5 class="card-title">Anniversary Celebration</h5>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div> <!-- GALLERY CONTAINER END -->
+
+</section>
+<!-- ================= HALL GALLERY SECTION END ================= -->
+
+{% endblock %}
