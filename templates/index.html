@@ -1,0 +1,95 @@
+{% extends 'master.html' %}
+{% load static %}
+{% block title %}Home - Royal Hospitality{% endblock %}
+
+{% block content %}
+
+<!-- ================= HERO SECTION START ================= -->
+<section id="hero" class="hero position-relative">
+
+  <!-- Overlay -->
+  <div class="overlay position-absolute w-100 h-100" style="background: rgba(0,0,0,0.4); top:0; left:0;"></div>
+
+  <!-- Hero Carousel -->
+  <div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="0" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroSlider" data-bs-slide-to="2"></button>
+    </div>
+
+    <!-- Carousel Items -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/ht-pr-1.jpg' %}" class="d-block w-100" style="object-fit: cover; height: 80vh;" alt="Luxury Room">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/ht-pr-2.jpg' %}" class="d-block w-100" style="object-fit: cover; height: 80vh;" alt="Elegant Lobby">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/ht-pr-3.jpg' %}" class="d-block w-100" style="object-fit: cover; height: 80vh;" alt="Dining Area">
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+    <!-- Hero Text -->
+    <div class="hero-text position-absolute top-50 start-50 translate-middle text-center text-white">
+      <h1 class="display-4 fw-bold">ROYAL HOSPITALITY</h1>
+      <p class="lead">Luxury. Comfort. Excellence.</p>
+    </div>
+
+  </div>
+</section>
+<!-- ================= HERO SECTION END ================= -->
+
+<!-- ================= ABOUT SECTION START ================= -->
+<section class="experience py-5 bg-light">
+  <div class="container">
+
+   <h2 class="section-title text-center mb-4 text-dark">About Us</h2>
+<p class="section-desc text-center mb-5 col-md-8 mx-auto text-dark">
+  Welcome to Hotel Royal Hospitality, where comfort meets elegance. Experience top-notch service and facilities designed to make your stay unforgettable.
+</p>
+
+    <h3 class="section-title text-center mb-4">Comfort and Relaxation</h3>
+
+    <div class="row g-4 justify-content-center">
+
+  <div class="col-12 col-sm-6 col-md-4 text-center">
+    <div class="exp-card p-3">
+      <img src="{% static 'images/premium rooms.jpeg' %}" class="img-fluid rounded shadow-sm mb-3">
+      <h4>Premium Rooms</h4>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 text-center">
+    <div class="exp-card p-3">
+      <img src="{% static 'images/dinning area.jpg' %}" class="img-fluid rounded shadow-sm mb-3">
+      <h4>Healthy Dining</h4>
+    </div>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-4 text-center">
+    <div class="exp-card p-3">
+      <img src="{% static 'images/study room.jpg' %}" class="img-fluid rounded shadow-sm mb-3">
+      <h4>Study-Friendly Environment</h4>
+    </div>
+  </div>
+
+</div>
+
+</section>
+<!-- ================= ABOUT SECTION END ================= -->
+
+{% endblock %}
